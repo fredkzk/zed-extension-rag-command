@@ -1,0 +1,12 @@
+id = "rag-commands"
+name = "RAG query"
+description = "A slash command to query aichat local RAG API endpoint. Install aichat LLM CLI Tool and implement RAG, then chat with http://127.0.0.1:8000/v1/chat/completions."
+version = "0.1.0"
+schema_version = 1
+authors = ["Fred <fredkzk@gmail.com>"]
+repository = "https://github.com/fredkzk/rag-zed-extension"
+
+[slash_commands.rag]
+description = "Query the RAG API with your input"
+requires_argument = true
+tooltip_text = "Query RAG"

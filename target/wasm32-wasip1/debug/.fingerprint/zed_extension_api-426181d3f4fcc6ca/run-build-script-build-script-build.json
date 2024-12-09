@@ -1,0 +1,1 @@
+{"rustc":16073551614293250696,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[9737993679296313290,"build_script_build",false,13917036612733804107]],"local":[{"Precalculated":"13378070388.028768100s (wit/since_v0.0.6/nodejs.wit)"}],"rustflags":["-C","symbol-mangling-version=v0","--cfg","tokio_unstable"],"metadata":0,"config":0,"compile_kind":0}

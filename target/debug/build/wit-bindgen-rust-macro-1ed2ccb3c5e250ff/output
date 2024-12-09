@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=build.rs
+cargo:rustc-env=DEBUG_OUTPUT_DIR=C:\Users\fredk\zed\extensions\rag\target\debug\build\wit-bindgen-rust-macro-1ed2ccb3c5e250ff\out
