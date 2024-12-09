@@ -88,7 +88,7 @@ You can also dynamically adjust the reranker using the `.set` command.
 ```
 
 ## Usage
-Select the `/rag` command and type your prompt after it:
+Select the `/rag` command from the assistant panel and type your prompt after it, for example:
 ```
 /rag How do I install Deno
 ```
