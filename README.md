@@ -1,15 +1,14 @@
 # Rag Slash Command Extension
----
+
 This Zed extension lets users query a local vector database with the slash command `/rag`. The built-in vector database and full-text search engine is powered by [aichat](https://github.com/sigoden/aichat/wiki/RAG-Guide).
 
 ## Pre-requisites
----
+
 [Install aichat](https://github.com/sigoden/aichat/blob/main/README.md).
 
 ## Setup
----
+
 ### Init RAG
----
 **From Files:**
 ```
 > Add documents: /tmp/dir1/file1;/tmp/dir1/file2
@@ -58,7 +57,6 @@ Load https://sigoden.github.io/mynotes/tools/** [1/1]
 > `**` is used to distinguish between Url and RecursiveUrl
 
 ### Custom Document Loaders
----
 By default, AICHAT can only process text files. We need to configure the document_loaders so AICHAT can handle binary files such as PDFs and DOCXs.
 ```yaml
 # Define document loaders to control how RAG and `.file`/`--file` load files of specific formats.
@@ -74,7 +72,6 @@ The `document_loaders` configuration item is a map where the key represents the 
 To ensure the loaders function correctly, please verify that the required tools are installed.
 
 ### Use Reranker
----
 AIChat RAG defaults to the `reciprocal_rank_fusion` algorithm for merging vector and keyword search results.
 
 However, using a reranker to combine these results is a more established method that can yield greater relevance and accuracy.
