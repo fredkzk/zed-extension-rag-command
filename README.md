@@ -4,7 +4,7 @@ This Zed extension lets users query a local vector database with the slash comma
 
 **To use it:**
 - Clone this repo to your local drive
-- Open the Zed extensions panel [guide](https://zed.dev/docs/extensions/installing-extensions) with `ctrl-shift-x` and select the rag folder. This will encod a wasm component for the extension, and compile it in Rust.
+- Open the Zed extensions panel ([guide](https://zed.dev/docs/extensions/installing-extensions)) with `ctrl-shift-x` and select the rag folder. This will encode a wasm component for the extension, and compile it in Rust.
 
 ## Pre-requisites
 
