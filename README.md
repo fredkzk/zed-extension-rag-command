@@ -3,8 +3,8 @@
 This Zed extension lets users query a local vector database with the slash command `/rag`. The built-in vector database and full-text search engine is powered by [aichat](https://github.com/sigoden/aichat/wiki/RAG-Guide).
 
 **To use it:**
-- Download the rag folder to your local drive
-- Open the Zed extensions panel [guide](https://zed.dev/docs/extensions/installing-extensions) with `ctrl-shift-x` and select the `rag` folder. This will encod a wasm component for the extension, and compile it in Rust.
+- Clone this repo to your local drive
+- Open the Zed extensions panel [guide](https://zed.dev/docs/extensions/installing-extensions) with `ctrl-shift-x` and select the rag folder. This will encod a wasm component for the extension, and compile it in Rust.
 
 ## Pre-requisites
 
