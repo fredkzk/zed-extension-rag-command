@@ -8,8 +8,8 @@ license = "Apache-2.0"
 path = "src/zed_rag.rs"
 crate-type = ["cdylib"]
 
-[lints]
-workspace = true
+# [lints] (Since the crate is not in a Cargo workspace)
+# workspace = true
 
 [dependencies]
 # Use the local version of the Zed extension API, for local testing and development:
