@@ -1,10 +1,14 @@
 # Rag Slash Command Extension
 
-This Zed extension lets users query a local vector database with the slash command `/rag`. The built-in vector database and full-text search engine is powered by [aichat](https://github.com/sigoden/aichat/wiki/RAG-Guide).
+This Zed extension lets you query a local vector database with the slash command `/rag`. The built-in vector database and full-text search engine is powered by [aichat](https://github.com/sigoden/aichat/wiki/RAG-Guide).
 
 **To use it:**
-- Clone this repo to your local drive
-- Open the Zed extensions panel ([guide](https://zed.dev/docs/extensions/installing-extensions)) with `ctrl-shift-x` and select the whole folder. This will encode a wasm component for the extension, and compile it in Rust.
+- Implement aichat RAG on your documents
+- Run the [aichat server](https://github.com/sigoden/aichat/wiki/Command-Line-Guide#run-server) to make the vectorized data (a yaml file located at C:\Users\...\AppData\Roaming\aichat\rags in Windows) available via http requests
+- Clone this repo
+- Open Zed with **Administrator privileges** (Windows)
+- Open the Zed extensions panel ([guide](https://zed.dev/docs/extensions/installing-extensions)) (`ctrl-shift-x`) and select the whole folder of the extension. This will encode a wasm component for the extension, and compile it in Rust
+- Use the slash command followed by your prompt from the Assistant Panel.
 
 ## Pre-requisites
 
@@ -90,6 +94,25 @@ You can also dynamically adjust the reranker using the `.set` command.
 ```
 .set rag_reranker_model <tab>
 ```
+
+### Run Server
+AIChat comes with a built-in lightweight http server.
+
+```
+$ aichat --serve
+Chat Completions API: http://127.0.0.1:8000/v1/chat/completions
+Embeddings API:       http://127.0.0.1:8000/v1/embeddings
+LLM Playground:       http://127.0.0.1:8000/playground
+LLM Arena:            http://127.0.0.1:8000/arena?num=2
+```
+
+Change the listening address:
+```
+$ aichat --serve 0.0.0.0
+$ aichat --serve 8080
+$ aichat --serve 0.0.0.0:8080
+```
+
 
 ## Usage
 Select the `/rag` command from the assistant panel and type your prompt after it, for example:
