@@ -6,6 +6,8 @@ This Zed extension lets you query a local vector database with the slash command
 - Implement aichat RAG on your documents
 - Run the [aichat server](https://github.com/sigoden/aichat/wiki/Command-Line-Guide#run-server) to make the vectorized data (a yaml file located at C:\Users\...\AppData\Roaming\aichat\rags in Windows) available via http requests
 - Clone this repo
+- Adjust [this field in the zed_rag.rs file](https://github.com/fredkzk/zed-extension-rag-command/blob/4fd216267cb7e90e481012d332b40831fe3ff51e/src/zed_rag.rs#L60) to the name of your yaml file
+- Adjust the [system prompt here](https://github.com/fredkzk/zed-extension-rag-command/blob/4fd216267cb7e90e481012d332b40831fe3ff51e/src/zed_rag.rs#L79)
 - Open Zed with **Administrator privileges** (Windows)
 - Open the Zed extensions panel ([guide](https://zed.dev/docs/extensions/installing-extensions)) (`ctrl-shift-x`) and select the whole folder of the extension. This will encode a wasm component for the extension, and compile it in Rust
 - Use the slash command followed by your prompt from the Assistant Panel.
