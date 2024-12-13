@@ -2,7 +2,7 @@
 
 This Zed extension lets you query a local vector database with the slash command `/rag`. The built-in vector database and full-text search engine is powered by [aichat](https://github.com/sigoden/aichat/wiki/RAG-Guide).
 
-**To use it:**
+**How to use it:**
 - Implement aichat RAG on your documents
 - Run the [aichat server](https://github.com/sigoden/aichat/wiki/Command-Line-Guide#run-server) to make the vectorized data (a yaml file located at C:\Users\...\AppData\Roaming\aichat\rags in Windows) available via http requests
 - Clone this repo
