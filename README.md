@@ -117,7 +117,7 @@ $ aichat --serve 0.0.0.0:8080
 
 
 ## Usage
-Select the `/rag` command from the assistant panel and type your prompt after it, for example:
+Type `/rag` in the assistant panel followed by your prompt, for example:
 ```
 /rag How do I install Deno?
 ```
